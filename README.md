@@ -3,5 +3,7 @@ Created next react app using following command :
 
 Added NVMRC to lts
 
-bootstrap storybook:
+moved react dependencies to dev
+
+Bootstrapped storybook:
 - npm create storybook@latest -- --builder "webpack5" --package-manager "npm" --no-dev

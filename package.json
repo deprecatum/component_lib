@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "lint": "eslint"
+    "lint": "eslint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
-  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
@@ -15,6 +16,9 @@
     "typescript": "^5",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "storybook": "^10.2.14",
+    "@storybook/nextjs": "^10.2.14",
+    "eslint-plugin-storybook": "^10.2.14"
   }
 }
