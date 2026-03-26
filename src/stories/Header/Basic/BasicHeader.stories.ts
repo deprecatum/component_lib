@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/nextjs';
+import { ThemeProvider } from '@/stories/Theme/ThemeProvider';
 
 import { fn } from 'storybook/test';
 
@@ -10,8 +11,7 @@ const meta = {
   parameters: {},
   args: {},
 } satisfies Meta<typeof BasicHeader>;
-
 export default meta;
-type Story = StoryObj<typeof meta>;
 
+type Story = StoryObj<typeof meta>;
 export const ExampleBasicHeader: Story = {};
