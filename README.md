@@ -1,5 +1,13 @@
-Created next react app using following command : 
-- npx create-next-app@latest --no-tailwind --no-react-compiler --no-app --no-import-alias --ts --eslint --use-npm --empty --src-dir
+Added react, react-dom and webpack
+- npm i --save-dev react react-dom webpack
+
+Added dependency
+- npm i --save-dev typescript eslint 
+
+Added storybook using
+- npm create storybook@latest
+
+
 
 Added NVMRC to lts
 
