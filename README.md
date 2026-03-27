@@ -10,9 +10,4 @@ Added storybook using
 Ran eslint config CLI
 - npm init @eslint/config@latest
 
-
-
-Added NVMRC to lts
-
-bootstrap storybook:
-- npm create storybook@latest -- --builder "webpack5" --package-manager "npm" --no-dev
+Manually configured eslint config file
