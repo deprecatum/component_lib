@@ -7,6 +7,9 @@ Added dependency
 Added storybook using
 - npm create storybook@latest
 
+Ran eslint config CLI
+- npm init @eslint/config@latest
+
 
 
 Added NVMRC to lts

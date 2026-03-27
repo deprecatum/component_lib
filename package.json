@@ -20,16 +20,22 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@eslint/css": "^1.0.0",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^1.2.0",
     "@storybook/addon-a11y": "^10.3.3",
     "@storybook/addon-docs": "^10.3.3",
     "@storybook/addon-webpack5-compiler-swc": "^4.0.3",
     "@storybook/react-webpack5": "^10.3.3",
-    "eslint": "^10.1.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-storybook": "^10.3.3",
+    "globals": "^17.4.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "storybook": "^10.3.3",
     "typescript": "5.9.2",
+    "typescript-eslint": "^8.57.2",
     "webpack": "^5.105.4"
   },
   "eslintConfig": {
