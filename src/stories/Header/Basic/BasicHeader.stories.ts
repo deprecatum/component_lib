@@ -1,7 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/nextjs';
-import { ThemeProvider } from '@/stories/Theme/ThemeProvider';
-
-import { fn } from 'storybook/test';
 
 import { BasicHeader } from './BasicHeader';
 
