@@ -1,0 +1,8 @@
+.header-button {
+    background-color: var(--theme-primary);
+    border: none;
+    color: var(--theme-on-primary);
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
