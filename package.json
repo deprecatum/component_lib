@@ -1,7 +1,6 @@
 {
   "name": "component_lib",
   "version": "1.0.0",
-  "description": "Created next react app using following command :  - npx create-next-app@latest --no-tailwind --no-react-compiler --no-app --no-import-alias --ts --eslint --use-npm --empty --src-dir",
   "homepage": "https://github.com/deprecatum/component_lib#readme",
   "bugs": {
     "url": "https://github.com/deprecatum/component_lib/issues"
