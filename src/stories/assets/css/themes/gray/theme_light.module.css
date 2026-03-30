@@ -1,0 +1,39 @@
+:root {
+  /* Gray light theme using colors from colors.module.css */
+  --theme-bg: var(--color-frost-white);
+  --theme-surface: var(--color-cloud-mist);
+  --theme-border: var(--color-sky-zen);
+
+  --theme-text-primary: var(--color-obsidian-deep);
+  --theme-text-secondary: var(--color-midnight-ink);
+  --theme-text-muted: var(--color-ice-grey);
+
+  --theme-accent: var(--color-indigo-tide);
+  --theme-primary-button: var(--color-sky-zen);
+  --theme-primary-button-text: var(--color-obsidian-deep);
+}
+
+body {
+  background-color: var(--theme-bg);
+  color: var(--theme-text-primary);
+}
+
+.container, .card {
+  background-color: var(--theme-surface);
+  border: 1px solid var(--theme-border);
+  color: var(--theme-text-primary);
+}
+
+p, span, label, input, button {
+  color: var(--theme-text-secondary);
+}
+
+small, .muted {
+  color: var(--theme-text-muted);
+}
+
+button.primary {
+  background-color: var(--theme-primary-button);
+  color: var(--theme-primary-button-text);
+  border: 1px solid var(--theme-border);
+}

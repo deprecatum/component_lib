@@ -1,0 +1,53 @@
+:root {
+  /* Added colors from request */
+  --color-blue-lift: #e6f2ff;
+  --color-deep-navy: #000c19;
+  --color-sky-zen: #75beff;
+  --color-indigo-tide: #0e61ba;
+  --color-frost-white: #fcfeff;
+  --color-ice-grey: #f9fbfc;
+  --color-cloud-mist: #f5f7fa;
+  --color-obsidian-deep: #151c26;
+  --color-midnight-ink: #0f1219;
+  --color-ink-shadow: #050a0f;
+}
+
+.color-blue-lift {
+  color: var(--color-blue-lift);
+}
+
+.color-deep-navy {
+  color: var(--color-deep-navy);
+}
+
+.color-sky-zen {
+  color: var(--color-sky-zen);
+}
+
+.color-indigo-tide {
+  color: var(--color-indigo-tide);
+}
+
+.color-frost-white {
+  color: var(--color-frost-white);
+}
+
+.color-ice-grey {
+  color: var(--color-ice-grey);
+}
+
+.color-cloud-mist {
+  color: var(--color-cloud-mist);
+}
+
+.color-obsidian-deep {
+  color: var(--color-obsidian-deep);
+}
+
+.color-midnight-ink {
+  color: var(--color-midnight-ink);
+}
+
+.color-ink-shadow {
+  color: var(--color-ink-shadow);
+}

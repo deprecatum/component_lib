@@ -1,0 +1,53 @@
+:root {
+  /* Gray color palette (cloned structure from blue theme) */
+  --color-blue-lift: #f0f0f0;
+  --color-deep-navy: #333333;
+  --color-sky-zen: #cccccc;
+  --color-indigo-tide: #666666;
+  --color-frost-white: #ffffff;
+  --color-ice-grey: #e0e0e0;
+  --color-cloud-mist: #d0d0d0;
+  --color-obsidian-deep: #444444;
+  --color-midnight-ink: #222222;
+  --color-ink-shadow: #111111;
+}
+
+.color-blue-lift {
+  color: var(--color-blue-lift);
+}
+
+.color-deep-navy {
+  color: var(--color-deep-navy);
+}
+
+.color-sky-zen {
+  color: var(--color-sky-zen);
+}
+
+.color-indigo-tide {
+  color: var(--color-indigo-tide);
+}
+
+.color-frost-white {
+  color: var(--color-frost-white);
+}
+
+.color-ice-grey {
+  color: var(--color-ice-grey);
+}
+
+.color-cloud-mist {
+  color: var(--color-cloud-mist);
+}
+
+.color-obsidian-deep {
+  color: var(--color-obsidian-deep);
+}
+
+.color-midnight-ink {
+  color: var(--color-midnight-ink);
+}
+
+.color-ink-shadow {
+  color: var(--color-ink-shadow);
+}
