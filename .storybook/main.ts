@@ -23,8 +23,6 @@ const config: StorybookConfig = {
       config.resolve.extensions = [
         '.tsx',
         '.ts',
-        '.jsx',
-        '.js',
         '.json',
       ];
     }
