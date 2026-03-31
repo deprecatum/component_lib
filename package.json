@@ -14,7 +14,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build": "storybook build",
     "lint": "eslint src",
     "knip": "knip"
   },
@@ -27,6 +27,7 @@
     "@eslint/json": "^1.2.0",
     "@storybook/addon-a11y": "^10.3.3",
     "@storybook/addon-docs": "^10.3.3",
+    "@storybook/addon-styling-webpack": "^3.0.1",
     "@storybook/addon-webpack5-compiler-babel": "4.0.1",
     "@storybook/react-webpack5": "10.3.3",
     "@types/css-modules": "^1.0.5",

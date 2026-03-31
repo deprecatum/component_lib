@@ -1,3 +1,8 @@
+root {
+    --theme-primary: #6200ee;
+    --theme-on-primary: #ffffff;
+}
+
 .header-button {
     background-color: var(--theme-primary);
     border: none;
