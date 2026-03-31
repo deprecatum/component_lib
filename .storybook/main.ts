@@ -1,8 +1,4 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
 import type { StorybookConfig } from '@storybook/react-webpack5';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const config: StorybookConfig = {
   "stories": [
