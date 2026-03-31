@@ -1,5 +1,5 @@
 import "./basicPage.css"
-import { BasicHeader } from "@/stories/Header/Basic/BasicHeader"
+import { BasicHeader } from "../../Header/Basic/BasicHeader"
 
 export const BasicPage = () => {
     return (
