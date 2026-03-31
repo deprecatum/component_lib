@@ -1,4 +1,4 @@
-import styles from  "./headerButton.css"
+import styles from  "./headerButton.module.css"
 
 export const HeaderButton = () => {
     return (

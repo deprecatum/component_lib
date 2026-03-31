@@ -1,6 +1,8 @@
+import styles from './basicHeader.module.css';
+
 export const BasicHeader = () => {
     return (
-        <header className="header">
+        <header className={styles.header}>
             <div>
                 <button className="actionButton" id="singleExtraction">
 
