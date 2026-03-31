@@ -6,7 +6,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const config: StorybookConfig = {
   "stories": [
-    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
+    "../src/**/*.stories.@(ts|tsx)"
   ],
   "addons": [
     "@storybook/addon-webpack5-compiler-babel",
@@ -14,19 +14,5 @@ const config: StorybookConfig = {
     "@storybook/addon-docs"
   ],
   "framework": "@storybook/react-webpack5",
-  webpackFinal: async (config) => {
-    if (config.resolve) {
-      config.resolve.alias = {
-        ...(config.resolve.alias || {}),
-        '@': path.resolve(__dirname, '../src'),
-      };
-      config.resolve.extensions = [
-        '.tsx',
-        '.ts',
-        '.json',
-      ];
-    }
-    return config;
-  },
 };
 export default config;
