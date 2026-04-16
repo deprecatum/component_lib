@@ -23,3 +23,5 @@ export const HeaderButton = ({ url, text }: HeaderButtonProps) => {
         </>
     )
 }
+
+export default HeaderButton
