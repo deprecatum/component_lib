@@ -7,7 +7,7 @@ interface HeaderButtonProps {
 
 export const HeaderButton = ({ url, text }: HeaderButtonProps) => {
     const Button = () => (
-        <button className={styles.headerButton}>
+        <button className={styles.button}>
             {text}
         </button>
     )

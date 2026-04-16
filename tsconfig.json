@@ -13,7 +13,8 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "allowJs": true,
-    "types": ["node", "react", "react-dom"]
+    "types": ["node", "react", "react-dom"],
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
   },
   "include": ["src", ".storybook", "types"]
 }

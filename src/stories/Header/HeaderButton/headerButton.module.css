@@ -3,7 +3,7 @@ root {
     --theme-on-primary: #ffffff;
 }
 
-.header-button {
+.button {
     background-color: var(--theme-primary);
     border: none;
     color: var(--theme-on-primary);

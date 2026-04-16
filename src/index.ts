@@ -1,1 +1,1 @@
-export * from "./stories/Header/HeaderButton/HeaderButton"
+export {HeaderButton} from "./stories/Header/HeaderButton/HeaderButton";
