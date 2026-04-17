@@ -1,9 +1,23 @@
-import blueStyle from './assets/css/themes/blue/theme.module.css';
-import earthenStyle from './assets/css/themes/earthen/theme.module.css';
-import grayStyle from './assets/css/themes/gray/theme.module.css';
+import lightBlueStyle from '../assets/css/themes/blue/theme_light.module.css';
+import lightEarthenStyle from '../assets/css/themes/earthen/theme_light.module.css';
+import lightGrayStyle from '../assets/css/themes/gray/theme_light.module.css'
+import darkBlueStyle from '../assets/css/themes/blue/theme_dark.module.css';
+import darkEarthenStyle from '../assets/css/themes/earthen/theme_dark.module.css';
+import darkGrayStyle from '../assets/css/themes/gray/theme_dark.module.css'
 
-export const Theme = {
-    blue: blueStyle,
-    earthen: earthenStyle,
-    gray: grayStyle,
+const lightThemes = {
+    lightBlue: lightBlueStyle,
+    lightEarthen: lightEarthenStyle,
+    lightGray: lightGrayStyle,
+}
+
+const darkThemes = {
+    darkBlue: darkBlueStyle,
+    darkEarthen: darkEarthenStyle,
+    darkGray: darkGrayStyle,
+}
+
+export const Themes = {
+    ...lightThemes,
+    ...darkThemes
 }

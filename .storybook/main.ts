@@ -1,14 +1,60 @@
 import type { StorybookConfig } from '@storybook/react-webpack5';
 
 const config: StorybookConfig = {
+  "framework": "@storybook/react-webpack5",
   "stories": [
     "../src/**/*.stories.@(ts|tsx)"
   ],
   "addons": [
     "@storybook/addon-webpack5-compiler-babel",
     "@storybook/addon-a11y",
-    "@storybook/addon-docs"
+    "@storybook/addon-docs",
+    {
+      name: '@storybook/addon-styling-webpack',
+      options: {
+        rules: [
+          // Replaces existing CSS rules to support CSS Modules
+          {
+            test: /\.css$/,
+            use: [
+              {
+                loader: 'css-loader',
+                options: {
+                  modules: {
+                    auto: true,
+                    localIdentName: '[name]__[local]--[hash:base64:5]',
+                  },
+                  esModule: false,
+                },
+              }
+            ],
+          }
+        ]
+      }
+    },
+    ({
+      name: "@storybook/addon-styling-webpack",
+
+      options: {
+        rules: [{
+      test: /\.css$/,
+      sideEffects: true,
+      use: [,
+          {
+              loader: "css-loader",
+              options: {
+                  // Want to add more CSS Modules options? Read more here: https://github.com/webpack-contrib/css-loader#modules
+    modules: {
+    auto: true,
+    },
+                  
+              },
+          },
+      ],
+    },],
+      }
+    })
   ],
-  "framework": "@storybook/react-webpack5",
+  
 };
 export default config;

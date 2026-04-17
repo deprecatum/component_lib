@@ -1,17 +1,24 @@
-import React from 'react';
-import {Theme} from './index';
+import React, { useContext } from 'react';
+import { Themes } from './index';
 
-const ThemeContext = React.createContext(Theme.gray);
+type ThemeType = Record<string, string>;
 
-interface themeProviderProps {
-  theme?: CSSModule,
-  children: React.ReactNode,
+const ThemeContext = React.createContext<ThemeType>(Themes.lightBlue);
+
+interface ThemeProviderProps {
+  theme?: ThemeType;
+  children: React.ReactNode;
 }
 
-export const ThemeProvider = ({theme, children}: themeProviderProps) => {
+export const ThemeProvider = ({ theme, children }: ThemeProviderProps) => {
+  console.log('Loaded theme');
+  let contextTheme = useContext(ThemeContext);
+  contextTheme = theme ? theme : contextTheme;
   return (
-    <ThemeContext.Provider value={theme}>
-      {children}
+    <ThemeContext.Provider value={contextTheme}>
+      <div id="theme" className={contextTheme.body}>
+        {children}
+      </div>
     </ThemeContext.Provider>
   );
 }

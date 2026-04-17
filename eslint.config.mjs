@@ -2,7 +2,6 @@ import js from "@eslint/js";
 import globals from "globals";
 import tsParser from "@typescript-eslint/parser";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
-import pluginReact from "eslint-plugin-react";
 import pluginStorybook from "eslint-plugin-storybook";
 import json from "@eslint/json";
 import css from "@eslint/css";
@@ -12,7 +11,7 @@ export default defineConfig([
   globalIgnores(["src/stories/assets/**/*" ]),
   {
     files: ["src/**/*.{ts,tsx}"],
-    plugins: { js, pluginReact, tsPlugin, pluginStorybook },
+    plugins: { js, tsPlugin, pluginStorybook },
     languageOptions: {
       parser: tsParser,
       globals: globals.node

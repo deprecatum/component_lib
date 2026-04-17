@@ -1,6 +1,6 @@
 {
-  "name": "component_lib",
-  "version": "1.0.0",
+  "name": "@deprecatum/component_lib",
+  "version": "0.0.1",
   "homepage": "https://github.com/deprecatum/component_lib#readme",
   "bugs": {
     "url": "https://github.com/deprecatum/component_lib/issues"
@@ -16,7 +16,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "lint": "eslint src",
-    "knip": "knip"
+    "knip": "knip",
+    "build": "webpack build --config ./webpack.config.js"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.29.2",
@@ -27,26 +28,35 @@
     "@eslint/json": "^1.2.0",
     "@storybook/addon-a11y": "^10.3.3",
     "@storybook/addon-docs": "^10.3.3",
+    "@storybook/addon-styling-webpack": "^3.0.1",
     "@storybook/addon-webpack5-compiler-babel": "4.0.1",
     "@storybook/react-webpack5": "10.3.3",
     "@types/css-modules": "^1.0.5",
     "@types/node": "^24.1.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "css-loader": "^7.1.4",
     "eslint": "10.1.0",
-    "eslint-plugin-react": "7.37.5",
     "eslint-plugin-storybook": "^10.2.14",
     "globals": "^17.4.0",
+    "jest": "^30.3.0",
     "knip": "^6.0.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "storybook": "^10.2.14",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.7",
     "typescript": "5.9.2",
     "typescript-eslint": "8.58.0",
-    "webpack": "^5.105.4"
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2"
+  },
+  "resolutions": {
+    "eslint": "10.1.0"
   },
   "packageManager": "npm@11.9.0",
   "engines": {
     "node": "24.14.1"
-  }
+  },
+  "main": "dist/index.js"
 }
