@@ -17,6 +17,7 @@ const config: StorybookConfig = {
           {
             test: /\.css$/,
             use: [
+              'style-loader',
               {
                 loader: 'css-loader',
                 options: {
@@ -31,29 +32,7 @@ const config: StorybookConfig = {
           }
         ]
       }
-    },
-    ({
-      name: "@storybook/addon-styling-webpack",
-
-      options: {
-        rules: [{
-      test: /\.css$/,
-      sideEffects: true,
-      use: [,
-          {
-              loader: "css-loader",
-              options: {
-                  // Want to add more CSS Modules options? Read more here: https://github.com/webpack-contrib/css-loader#modules
-    modules: {
-    auto: true,
-    },
-                  
-              },
-          },
-      ],
-    },],
-      }
-    })
+    }
   ],
   
 };

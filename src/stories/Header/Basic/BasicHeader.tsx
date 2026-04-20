@@ -1,8 +1,12 @@
 import styles from './basicHeader.module.css';
 
-export const BasicHeader = () => {
+type BasicHeaderProps = {
+    headerClass?: string
+}
+
+export const BasicHeader = ({ headerClass = styles.header }: BasicHeaderProps) => {
     return (
-        <header className={styles.header}>
+        <header className={headerClass}>
             <div>
                 <button className="actionButton" id="singleExtraction">
 
