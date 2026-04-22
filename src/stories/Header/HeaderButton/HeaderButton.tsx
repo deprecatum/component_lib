@@ -1,13 +1,14 @@
 import styles from  "./headerButton.module.css"
 
-interface HeaderButtonProps {
-    url?: string
-    text: string
+type HeaderButtonProps = {
+    url?: string,
+    text: string,
+    classNames: string
 }
 
-export const HeaderButton = ({ url, text }: HeaderButtonProps) => {
+export const HeaderButton = ({ url, text, classNames =  styles.button }: HeaderButtonProps) => {
     const Button = () => (
-        <button className={styles.button}>
+        <button className={classNames}>
             {text}
         </button>
     )

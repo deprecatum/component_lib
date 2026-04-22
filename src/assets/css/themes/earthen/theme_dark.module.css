@@ -1,7 +1,6 @@
 @import './colors.module.css';
-@import '../../global/typography.module.css';
 
-:root {
+.earthenDarkTheme {
   /* Earthen dark theme using colors from colors.module.css */
   --theme-bg: var(--color-midnight-ink);
   --theme-surface: var(--color-obsidian-deep);

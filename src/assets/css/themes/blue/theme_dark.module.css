@@ -1,8 +1,7 @@
 @import './colors.module.css';
-@import '../../global/typography.module.css';
 
-:root {
-  /* Gray dark theme using colors from colors.module.css */
+.blueDarkTheme {
+  /* Dark theme using colors from colors.module.css */
   --theme-bg: var(--color-midnight-ink);
   --theme-surface: var(--color-obsidian-deep);
   --theme-border: var(--color-sky-zen);
@@ -15,3 +14,4 @@
   --theme-primary-button: var(--color-sky-zen);
   --theme-primary-button-text: var(--color-frost-white);
 }
+
