@@ -1,8 +1,7 @@
 @import './colors.module.css';
-@import '../../global/typography.module.css';
 
-:root {
-  /* Gray light theme using colors from colors.module.css */
+.blueLightTheme {
+  /* Light theme using colors from colors.module.css */
   --theme-bg: var(--color-frost-white);
   --theme-surface: var(--color-cloud-mist);
   --theme-border: var(--color-sky-zen);

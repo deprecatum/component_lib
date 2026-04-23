@@ -1,8 +1,13 @@
-const path = require("path");
+const path = require("path");   
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports= {
     mode:"production",
     entry: "./src/index.ts",
+    plugins: [
+        new MiniCssExtractPlugin(),
+    ],  
     module: {
         rules: [
             {
@@ -12,15 +17,16 @@ module.exports= {
             },
             {
                 test: /\.css$/i,
-                use: ['style-loader', 
+                use: [
+                    MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader',
                         options: {
-                        modules: {
-                            auto: true,
-                            localIdentName: '[name]__[local]--[hash:base64:5]',
-                        },
-                        esModule: false,
+                            modules: {
+                                auto: true,
+                                localIdentName: '[name]',
+                            },
+                            esModule: false,
                         },
                     }
                 ]
@@ -37,9 +43,15 @@ module.exports= {
             name: "@deprecatum/component_lib",
             type: "umd",
         },
+        globalObject: 'this',
     },
     externals: {
         react: 'react',
         'react-dom': 'react-dom',
+    },
+    optimization: {
+        minimizer: [
+            new CssMinimizerPlugin(),
+        ],
     },
 }
