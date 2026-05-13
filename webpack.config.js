@@ -5,9 +5,6 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 module.exports= {
     mode:"production",
     entry: "./src/index.ts",
-    plugins: [
-        new MiniCssExtractPlugin(),
-    ],  
     module: {
         rules: [
             {
@@ -24,7 +21,7 @@ module.exports= {
                         options: {
                             modules: {
                                 auto: true,
-                                localIdentName: '[name]',
+                                localIdentName: '[local]',
                             },
                             esModule: false,
                         },
@@ -33,6 +30,9 @@ module.exports= {
             }
         ],
     },
+    plugins: [
+        new MiniCssExtractPlugin({filename: 'main.module.css'}),
+    ],  
     resolve: {
         extensions: ['.tsx'],
     },
