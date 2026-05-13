@@ -1,0 +1,16 @@
+@import './colors.module.css';
+
+.earthenLight {
+  /* Earthen light theme using colors from colors.module.css */
+  --theme-bg: #fff6ed;
+  --theme-surface: #d6c8ba;
+  --theme-border: #d1a38b;
+
+  --theme-text-primary: #4b3621;
+  --theme-text-secondary: #2e2218;
+  --theme-text-muted: #e8dcd3;
+
+  --theme-accent: #8f5c38;
+  --theme-primary-button: #d1a38b;
+  --theme-primary-button-text: #4b3621;
+}

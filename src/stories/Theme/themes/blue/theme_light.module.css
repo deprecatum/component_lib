@@ -1,0 +1,13 @@
+.blueLight {
+  --theme-bg: #fcfeff;
+  --theme-surface: #f5f7fa;
+  --theme-border: #75beff;
+
+  --theme-text-primary: #151c26;
+  --theme-text-secondary: #0f1219;
+  --theme-text-muted: #f9fbfc;
+
+  --theme-accent: #0e61ba;
+  --theme-primary-button: #75beff;
+  --theme-primary-button-text: #fcfeff;
+}

@@ -1,0 +1,15 @@
+@import './colors.module.css';
+
+.earthenDark {
+  --theme-bg: #2e2218;
+  --theme-surface: #4b3621;
+  --theme-border: #d1a38b;
+
+  --theme-text-primary: #fff6ed;
+  --theme-text-secondary: #d6c8ba;
+  --theme-text-muted: #e8dcd3;
+
+  --theme-accent: #8f5c38;
+  --theme-primary-button: #d1a38b;
+  --theme-primary-button-text: #fff6ed;
+}
