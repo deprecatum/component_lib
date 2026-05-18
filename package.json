@@ -60,11 +60,16 @@
   "engines": {
     "node": "24.14.1"
   },
+  "files": [
+    "dist"
+  ],
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
   "exports": {
-    ".": "./dist/index.js",
-    "./": "./dist/",
-    "types": "./dist/index.d.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./css": "./dist/main.module.css"
   }
 }
