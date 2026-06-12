@@ -1,0 +1,25 @@
+.header {
+    flex-direction: column;
+    height: 60px;
+    min-height: 60px;
+    background-color: var(--theme-bg);
+    border: 0px 0px 1px solid var(--theme-border);
+    display: flex;
+    justify-content: space-around;
+    color: var(--theme-text-primary);
+}
+
+.headerButton {
+    background-color: var(--theme-bg);
+    border: none;
+    color: var(--theme-text-primary);
+    padding: 10px 20px;
+    border: 2px solid var(--theme-surface);
+    border-width: 0px 0px 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 1px;
+    &:hover, &:active {
+        border-color: var(--theme-primary-button);
+    }
+}

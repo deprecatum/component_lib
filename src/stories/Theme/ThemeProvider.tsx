@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { Themes } from './index';
-
+import styles from './themes/blue/theme_light.module.css';
+/*
 type ThemeType = Record<string, string>;
 
-const ThemeContext = React.createContext<ThemeType>(Themes.lightBlue);
+const ThemeContext = React.createContext<CSSModule>(styles.blueLight);
 
 interface ThemeProviderProps {
   theme?: ThemeType;
@@ -22,3 +22,4 @@ export const ThemeProvider = ({ theme, children }: ThemeProviderProps) => {
     </ThemeContext.Provider>
   );
 }
+*/

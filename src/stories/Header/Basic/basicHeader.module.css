@@ -1,9 +1,0 @@
-.header {
-    min-height: 150px;
-    background-color: var(--theme-surface);
-    border: 0px 0px 1px solid var(--theme-border);
-    display: flex;
-    justify-content: space-around;
-    color: var(--theme-text-primary);
-}
-
