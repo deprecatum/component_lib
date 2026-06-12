@@ -5,15 +5,12 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 module.exports= {
     mode:"production",
     entry: "./src/index.ts",
-    plugins: [
-        new MiniCssExtractPlugin(),
-    ],  
     module: {
         rules: [
             {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
-                exclude: /node_modules/,
+                exclude: ["/node_modules/"],
             },
             {
                 test: /\.css$/i,
@@ -24,7 +21,7 @@ module.exports= {
                         options: {
                             modules: {
                                 auto: true,
-                                localIdentName: '[name]',
+                                localIdentName: '[local]',
                             },
                             esModule: false,
                         },
@@ -33,6 +30,9 @@ module.exports= {
             }
         ],
     },
+    plugins: [
+        new MiniCssExtractPlugin({filename: 'main.module.css'}),
+    ],  
     resolve: {
         extensions: ['.tsx'],
     },

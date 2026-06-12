@@ -1,0 +1,13 @@
+.grayDark {
+  --theme-bg: #0f1219;
+  --theme-surface: #151c26;
+  --theme-border: #75beff;
+
+  --theme-text-primary: #fcfeff;
+  --theme-text-secondary: #f5f7fa;
+  --theme-text-muted: #f9fbfc;
+
+  --theme-accent: #0e61ba;
+  --theme-primary-button: #75beff;
+  --theme-primary-button-text: #fcfeff;
+}

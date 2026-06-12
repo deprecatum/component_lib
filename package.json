@@ -17,7 +17,8 @@
     "build-storybook": "storybook build",
     "lint": "eslint src",
     "knip": "knip",
-    "build": "webpack build --config ./webpack.config.js"
+    "build": "webpack build --config ./webpack.config.js",
+    "prerelease": "branch=$(git branch --show-current) && npm version prerelease --preid=$branch"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.29.2",
@@ -50,6 +51,7 @@
     "ts-loader": "^9.5.7",
     "typescript": "5.9.2",
     "typescript-eslint": "8.58.0",
+    "typescript-plugin-css-modules": "^5.2.0",
     "webpack": "^5.105.4",
     "webpack-cli": "^7.0.2"
   },
@@ -60,9 +62,16 @@
   "engines": {
     "node": "24.14.1"
   },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
   "exports": {
-    ".": "./dist/index.js",
-    "./": "./dist/"
-  },
-  "types": "./dist/index.d.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./css": "./dist/main.module.css"
+  }
 }
