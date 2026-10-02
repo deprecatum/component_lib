@@ -1,10 +1,18 @@
-const path = require("path");   
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import webpack from "webpack";
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 
-module.exports= {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const config: webpack.Configuration = {
     mode:"production",
     entry: "./src/index.ts",
+    experiments: {
+		outputModule: true
+	},
     module: {
         rules: [
             {
@@ -36,14 +44,14 @@ module.exports= {
     resolve: {
         extensions: ['.tsx'],
     },
-    output: {  
+    output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
-        library: {
-            name: "@deprecatum/component_lib",
-            type: "umd",
-        },
-        globalObject: 'this',
+		module: true,
+		library: {
+			type: 'module'
+		},
+		chunkFormat: 'module'
     },
     externals: {
         react: 'react',
@@ -55,3 +63,5 @@ module.exports= {
         ],
     },
 }
+
+export default config;

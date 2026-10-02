@@ -1,5 +1,6 @@
 {
   "name": "@deprecatum/component_lib",
+  "type": "module",
   "version": "0.0.1",
   "homepage": "https://github.com/deprecatum/component_lib#readme",
   "bugs": {
@@ -17,7 +18,7 @@
     "build-storybook": "storybook build",
     "lint": "eslint src",
     "knip": "knip",
-    "build": "webpack build --config ./webpack.config.js",
+    "build": "webpack build --config ./webpack.config.ts",
     "prerelease": "branch=$(git branch --show-current) && npm version prerelease --preid=$branch"
   },
   "devDependencies": {
