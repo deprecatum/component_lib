@@ -18,5 +18,6 @@
     "outDir": "dist",
     "declaration": true
   },
-  "include": ["src", ".storybook", "types"]
+  "include": ["src", ".storybook", "types"],
+  "exclude": ["node_modules", "dist", "**/*.stories.tsx", "*.test.tsx"]
 }
