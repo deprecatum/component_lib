@@ -1,1 +1,1 @@
-export {BasicHeader} from "./stories/Header/Basic/Header";
+export {BasicHeader} from "./Header/Basic/Header";
