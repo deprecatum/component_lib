@@ -8,3 +8,5 @@ const Input = ({ name, className }: InputProps) => {
         <input name={name} className={className} />
     )
 }
+
+export { Input }
